@@ -57,10 +57,39 @@ document.getElementById('button1').onclick = function () {
 
 
       document.getElementById("blank").innerHTML=blank
-      if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+      if (!blank.includes("_")) {
+        console.log(blank)
+        document.getElementById("hangman16").innerHTML="you win"
+        document.getElementById("button1").disabled="true"
+        document.getElementById("button2").disabled="true"
+        document.getElementById("button3").disabled="true"
+        document.getElementById("button4").disabled="true"
+        document.getElementById("button5").disabled="true"
+        document.getElementById("button6").disabled="true"
+        document.getElementById("button7").disabled="true"
+        document.getElementById("button8").disabled="true"
+        document.getElementById("button9").disabled="true"
+        document.getElementById("button10").disabled="true"
+        document.getElementById("button11").disabled="true"
+        document.getElementById("button12").disabled="true"
+        document.getElementById("button13").disabled="true"
+        document.getElementById("button14").disabled="true"
+        document.getElementById("button15").disabled="true"
+        document.getElementById("button16").disabled="true"
+        document.getElementById("button17").disabled="true"
+        document.getElementById("button18").disabled="true"
+        document.getElementById("button19").disabled="true"
+        document.getElementById("button20").disabled="true"
+        document.getElementById("button21").disabled="true"
+        document.getElementById("button22").disabled="true"
+        document.getElementById("button23").disabled="true"
+        document.getElementById("button24").disabled="true"
+        document.getElementById("button25").disabled="true"
+        document.getElementById("button26").disabled="true"
+      }
 
 
-console.log(blank)
+
 
     } else {
       mistakes+=1
@@ -98,6 +127,32 @@ console.log(blank)
         document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
         document.getElementById("blank").innerHTML=answer
         document.getElementById("hangman16").innerHTML="you lose"
+        document.getElementById("button1").disabled="true"
+        document.getElementById("button2").disabled="true"
+        document.getElementById("button3").disabled="true"
+        document.getElementById("button4").disabled="true"
+        document.getElementById("button5").disabled="true"
+        document.getElementById("button6").disabled="true"
+        document.getElementById("button7").disabled="true"
+        document.getElementById("button8").disabled="true"
+        document.getElementById("button9").disabled="true"
+        document.getElementById("button10").disabled="true"
+        document.getElementById("button11").disabled="true"
+        document.getElementById("button12").disabled="true"
+        document.getElementById("button13").disabled="true"
+        document.getElementById("button14").disabled="true"
+        document.getElementById("button15").disabled="true"
+        document.getElementById("button16").disabled="true"
+        document.getElementById("button17").disabled="true"
+        document.getElementById("button18").disabled="true"
+        document.getElementById("button19").disabled="true"
+        document.getElementById("button20").disabled="true"
+        document.getElementById("button21").disabled="true"
+        document.getElementById("button22").disabled="true"
+        document.getElementById("button23").disabled="true"
+        document.getElementById("button24").disabled="true"
+        document.getElementById("button25").disabled="true"
+        document.getElementById("button26").disabled="true"
       }
 
     }
@@ -130,7 +185,35 @@ document.getElementById('button2').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -170,6 +253,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -201,7 +310,35 @@ document.getElementById('button3').onclick = function () {
 
     }
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 
 console.log(blank)
@@ -242,6 +379,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -273,7 +436,35 @@ document.getElementById('button4').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -313,6 +504,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -344,7 +561,35 @@ document.getElementById('button5').onclick = function () {
 
     }
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -384,6 +629,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -415,7 +686,35 @@ document.getElementById('button6').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -455,6 +754,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -486,7 +811,35 @@ document.getElementById('button7').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -526,6 +879,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -557,7 +936,35 @@ document.getElementById('button8').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -597,6 +1004,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -628,7 +1061,35 @@ document.getElementById('button9').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -668,6 +1129,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -699,7 +1186,35 @@ document.getElementById('button10').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -739,6 +1254,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -770,7 +1311,35 @@ document.getElementById('button11').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -810,6 +1379,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -841,7 +1436,35 @@ document.getElementById('button12').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -881,6 +1504,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -912,7 +1561,35 @@ document.getElementById('button13').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -952,6 +1629,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -983,7 +1686,35 @@ document.getElementById('button14').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1023,6 +1754,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -1054,7 +1811,35 @@ document.getElementById('button15').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1094,6 +1879,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -1125,7 +1936,35 @@ document.getElementById('button16').onclick = function () {
 
     }
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1165,6 +2004,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -1196,7 +2061,35 @@ document.getElementById('button17').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1236,6 +2129,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -1267,7 +2186,35 @@ document.getElementById('button18').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1307,6 +2254,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -1338,7 +2311,35 @@ document.getElementById('button19').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1378,6 +2379,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -1409,7 +2436,35 @@ document.getElementById('button20').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1449,6 +2504,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -1480,7 +2561,35 @@ document.getElementById('button21').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1520,6 +2629,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -1551,7 +2686,35 @@ document.getElementById('button22').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1591,6 +2754,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -1622,7 +2811,35 @@ document.getElementById('button23').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1662,6 +2879,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -1693,7 +2936,35 @@ document.getElementById('button24').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1733,6 +3004,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -1764,7 +3061,36 @@ document.getElementById('button25').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1804,6 +3130,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
@@ -1835,7 +3187,35 @@ document.getElementById('button26').onclick = function () {
 
 
     document.getElementById("blank").innerHTML=blank
-    if (!blank.includes("_")) document.getElementById("hangman16").innerHTML="you win"
+    if (!blank.includes("_")) {
+      document.getElementById("hangman16").innerHTML="you win"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
+    }
 
 console.log(blank)
 
@@ -1875,6 +3255,32 @@ console.log(blank)
       document.getElementById("hangman15").innerHTML="⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
       document.getElementById("blank").innerHTML=answer
       document.getElementById("hangman16").innerHTML="you lose"
+      document.getElementById("button1").disabled="true"
+      document.getElementById("button2").disabled="true"
+      document.getElementById("button3").disabled="true"
+      document.getElementById("button4").disabled="true"
+      document.getElementById("button5").disabled="true"
+      document.getElementById("button6").disabled="true"
+      document.getElementById("button7").disabled="true"
+      document.getElementById("button8").disabled="true"
+      document.getElementById("button9").disabled="true"
+      document.getElementById("button10").disabled="true"
+      document.getElementById("button11").disabled="true"
+      document.getElementById("button12").disabled="true"
+      document.getElementById("button13").disabled="true"
+      document.getElementById("button14").disabled="true"
+      document.getElementById("button15").disabled="true"
+      document.getElementById("button16").disabled="true"
+      document.getElementById("button17").disabled="true"
+      document.getElementById("button18").disabled="true"
+      document.getElementById("button19").disabled="true"
+      document.getElementById("button20").disabled="true"
+      document.getElementById("button21").disabled="true"
+      document.getElementById("button22").disabled="true"
+      document.getElementById("button23").disabled="true"
+      document.getElementById("button24").disabled="true"
+      document.getElementById("button25").disabled="true"
+      document.getElementById("button26").disabled="true"
     }
 
   }
