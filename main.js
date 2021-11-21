@@ -6,7 +6,7 @@
 
 var words = ["python", "javascript", "mongodb", "json", "java", "html", "css", "c", "csharp", "golang", "kotlin", "php", "sql", "ruby"]
 let answer = ''
-let maxWrong = 15
+let maxWrong = 5
 let mistakes = 0
 let guessed = []
 
@@ -96,35 +96,25 @@ document.getElementById('button1').onclick = function () {
     document.getElementById('button1').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -222,35 +212,25 @@ document.getElementById('button2').onclick = function () {
     document.getElementById('button2').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -348,35 +328,25 @@ document.getElementById('button3').onclick = function () {
     document.getElementById('button3').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -473,35 +443,25 @@ document.getElementById('button4').onclick = function () {
     document.getElementById('button4').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -598,35 +558,25 @@ document.getElementById('button5').onclick = function () {
     document.getElementById('button5').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -723,35 +673,25 @@ document.getElementById('button6').onclick = function () {
     document.getElementById('button6').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -848,35 +788,25 @@ document.getElementById('button7').onclick = function () {
     document.getElementById('button7').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -973,35 +903,25 @@ document.getElementById('button8').onclick = function () {
     document.getElementById('button8').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -1098,35 +1018,25 @@ document.getElementById('button9').onclick = function () {
     document.getElementById('button9').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -1223,35 +1133,25 @@ document.getElementById('button10').onclick = function () {
     document.getElementById('button10').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -1348,35 +1248,25 @@ document.getElementById('button11').onclick = function () {
     document.getElementById('button11').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -1473,35 +1363,25 @@ document.getElementById('button12').onclick = function () {
     document.getElementById('button12').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -1598,35 +1478,25 @@ document.getElementById('button13').onclick = function () {
     document.getElementById('button13').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -1723,35 +1593,25 @@ document.getElementById('button14').onclick = function () {
     document.getElementById('button14').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -1848,35 +1708,25 @@ document.getElementById('button15').onclick = function () {
     document.getElementById('button15').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -1973,35 +1823,25 @@ document.getElementById('button16').onclick = function () {
     document.getElementById('button16').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -2098,35 +1938,25 @@ document.getElementById('button17').onclick = function () {
     document.getElementById('button17').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -2223,35 +2053,25 @@ document.getElementById('button18').onclick = function () {
     document.getElementById('button18').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -2348,35 +2168,25 @@ document.getElementById('button19').onclick = function () {
     document.getElementById('button19').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -2473,35 +2283,25 @@ document.getElementById('button20').onclick = function () {
     document.getElementById('button20').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -2598,35 +2398,25 @@ document.getElementById('button21').onclick = function () {
     document.getElementById('button21').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -2723,35 +2513,25 @@ document.getElementById('button22').onclick = function () {
     document.getElementById('button22').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -2848,35 +2628,25 @@ document.getElementById('button23').onclick = function () {
     document.getElementById('button23').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -2973,35 +2743,25 @@ document.getElementById('button24').onclick = function () {
     document.getElementById('button24').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -3099,35 +2859,25 @@ document.getElementById('button25').onclick = function () {
     document.getElementById('button25').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
@@ -3224,35 +2974,25 @@ document.getElementById('button26').onclick = function () {
     document.getElementById('button26').className = 'notselected';
     if (mistakes === 1) {
       document.getElementById("hangman").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 2) {
       document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 3) {
       document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 4) {
+    } else if (mistakes === 2) {
       document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 5) {
       document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 6) {
-
       document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 7) {
+    } else if (mistakes === 3) {
       document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-    } else if (mistakes === 8) {
       document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-    } else if (mistakes === 9) {
       document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
-    } else if (mistakes === 10) {
+    } else if (mistakes === 4) {
       document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-    } else if (mistakes === 11) {
       document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 12) {
       document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 13) {
+    } else if (mistakes === 5) {
       document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 14) {
       document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-    } else if (mistakes === 15) {
       document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+    } else if (mistakes === 6) {
       document.getElementById("blank").innerHTML = answer
       document.getElementById("hangman16").innerHTML = "you lose"
       document.getElementById("button1").disabled = "true"
