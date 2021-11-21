@@ -1,58 +1,57 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>hangman</title>
-    <link href="main.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body style="background-color: black">
-    <h1 id="hackerman">Hackerman</h1>
-    <h1 id="hangman"></h1>
-    <h1 id="hangman2"></h1>
-    <h1 id="hangman3"></h1>
-    <h1 id="hangman4"></h1>
-    <h1 id="hangman5"></h1>
-    <h1 id="hangman6"></h1>
-    <h1 id="hangman7"></h1>
-    <h1 id="hangman8"></h1>
-    <h1 id="hangman9"></h1>
-    <h1 id="hangman10"></h1>
-    <h1 id="hangman11"></h1>
-    <h1 id="hangman12"></h1>
-    <h1 id="hangman13"></h1>
-    <h1 id="hangman14"></h1>
-    <h1 id="hangman15"></h1>
-    <h1 id="blank"></h1>
-    <h1 id="hangman16"></h1>
-    <br>
-    <button type="button" id="button1">A</button>
-    <button type="button" id="button2">B</button>
-    <button type="button" id="button3">C</button>
-    <button type="button" id="button4">D</button>
-    <button type="button" id="button5">E</button>
-    <button type="button" id="button6">F</button>
-    <button type="button" id="button7">G</button>
-    <button type="button" id="button8">H</button>
-    <button type="button" id="button9">I</button>
-    <button type="button" id="button10">J</button>
-    <button type="button" id="button11">K</button>
-    <button type="button" id="button12">L</button>
-    <button type="button" id="button13">M</button>
-    <button type="button" id="button14">N</button>
-    <button type="button" id="button15">O</button>
-    <button type="button" id="button16">P</button>
-    <button type="button" id="button17">Q</button>
-    <button type="button" id="button18">R</button>
-    <button type="button" id="button19">S</button>
-    <button type="button" id="button20">T</button>
-    <button type="button" id="button21">U</button>
-    <button type="button" id="button22">V</button>
-    <button type="button" id="button23">W</button>
-    <button type="button" id="button24">X</button>
-    <button type="button" id="button25">Y</button>
-    <button type="button" id="button26">Z</button>
-    <button onclick="location.reload();">Refresh Page</button>
-    <script src="main.js"></script>
-  </body>
-</html>
+h1 {
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  color: rgb(104, 183, 41);
+}
+
+button {
+  -moz-box-shadow: 0px 10px 14px -7px #AAAAAA;
+  -webkit-box-shadow: 0px 10px 14px -7px #AAAAAA;
+  box-shadow: 0px 10px 14px -7px #AAAAAA;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #AAAAAA), color-stop(1, #AAAAAA));
+  background:-moz-linear-gradient(top, #AAAAAA 5%, #AAAAAA 100%);
+  background:-webkit-linear-gradient(top, #AAAAAA 5%, #AAAAAA 100%);
+  background:-o-linear-gradient(top, #AAAAAA 5%, #AAAAAA 100%);
+  background:-ms-linear-gradient(top, #AAAAAA 5%, #AAAAAA 100%);
+  background:linear-gradient(to bottom, #AAAAAA 5%, #AAAAAA 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#AAAAAA', endColorstr='#AAAAAA',GradientType=0);
+  background-color:#77b55a;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  border:1px solid #4b8f29;
+  display:inline-block;
+  cursor:pointer;
+  color:#000000;
+  font-family:Arial;
+  font-size:13px;
+  font-weight:bold;
+  padding:6px 12px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #5b8a3c;
+}
+button:hover, button.selected {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FF851B), color-stop(1, #FF851B));
+  background:-moz-linear-gradient(top, #FF851B 5%, #FF851B 100%);
+  background:-webkit-linear-gradient(top, #FF851B 5%, #FF851B 100%);
+  background:-o-linear-gradient(top, #FF851B 5%, #FF851B 100%);
+  background:-ms-linear-gradient(top, #FF851B 5%, #FF851B 100%);
+  background:linear-gradient(to bottom, #FF851B 5%, #FF851B 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF851B', endColorstr='#FF851B',GradientType=0);
+  background-color:#FF851B;
+}
+button:hover, button.notselected {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FF851B), color-stop(1, #000000));
+  background:-moz-linear-gradient(top, #000000 5%, #000000 100%);
+  background:-webkit-linear-gradient(top, #000000 5%, #000000 100%);
+  background:-o-linear-gradient(top, #000000 5%, #000000 100%);
+  background:-ms-linear-gradient(top, #000000 5%, #000000 100%);
+  background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF851B', endColorstr='#FF851B',GradientType=0);
+  background-color:#ffffff;
+}
+button:active {
+  position:relative;
+  top:1px;
+}
