@@ -5,6 +5,7 @@ Though the origins of the game are unknown, a variant is mentioned in a book of 
 <br>
 ![alt text](https://imgur.com/iApOFVw.png)
 ![alt text](https://imgur.com/Pp4w3KM.png)
+<br>
 technologies used: JavaScript, HTML, CSS
 <br>
 https://reenatt-dotcom.github.io/
