@@ -1,56 +1,46 @@
 /*----- constants -----*/
-/*----- app's state (variables) -----*/
-/*----- cached element references -----*/
-/*----- event listeners -----*/
-/*----- functions -----*/
+const words = ["python", "javascript", "mongodb", "json", "java", "html", "css", "c", "csharp", "golang", "kotlin", "php", "sql", "ruby"]
+const maxWrong = 6
 
-let words = ["python", "javascript", "mongodb", "json", "java", "html", "css", "c", "csharp", "golang", "kotlin", "php", "sql", "ruby"]
+/*----- app's state (variables) -----*/
 let answer = ''
-let maxWrong = 5
+randomWord()
 let mistakes = 0
 let guessed = []
-
-String.prototype.replaceAt = function (index, replacement) {
-  return this.substr(0, index) + replacement + this.substr(index + replacement.length);
+let blank = ""
+for (let i = 0; i < answer.length; i++) {
+  blank += "_ "
 }
-
-function randomWord() {
-  answer = words[Math.floor(Math.random() * words.length)]
-}
-randomWord()
-
+render(document.getElementById("blank"), blank)
 let answerwithspaces = ""
 for (let i = 0; i < answer.length; i++) {
   answerwithspaces += answer[i]
   answerwithspaces += " "
 }
-
-let blank = ""
-for (let i = 0; i < answer.length; i++) {
-  blank += "_ "
-}
-document.getElementById("blank").innerHTML = blank
-
 let userRating
 let letters = "abcdefghijklmnopqrstuvwxyz"
-document.getElementById("button").addEventListener("click", initialize);
-initialize()
-function initialize() {
-  for (let i = 1; i < 17; i++) {
-    document.getElementById(`hangman${i}`).innerHTML = ""
-    let blank = ""
-    for (let i = 0; i < answer.length; i++) {
-      blank += "_ "
-    }
-    document.getElementById("blank").innerHTML = blank
 
-  }
+/*----- cached element references -----*/
+const sixteen = document.getElementById("hangman16")
+
+/*----- event listeners -----*/
+
+/*----- functions -----*/
+function randomWord() {
+  answer = words[Math.floor(Math.random() * words.length)]
 }
 
-document.getElementById("body").addEventListener("click", function (e) {
+// render
+function render(x, y) {
+  x.innerHTML = y
+
+}
+
+const fun = function (e) {
   let number = e.target.id.replace("post-", "")
+
   document.getElementById(number).disabled = "true"
-  if (e.target && e.target.nodeName == "BUTTON") {
+  if (e.target && e.target.nodeName == "BUTTON" && e.target.id !== "reset") {
 
     let letter = letters[number - 1]
     console.log(letter)
@@ -58,7 +48,7 @@ document.getElementById("body").addEventListener("click", function (e) {
 
     if (answer.includes(letter)) {
       document.getElementById(number).className = 'selected';
-      document.getElementById("blank").innerHTML = blank
+      render(document.getElementById("blank"), blank)
 
       if (answerwithspaces[0] === letter) {
         blank = blank.replaceAt(0, letter)
@@ -73,44 +63,42 @@ document.getElementById("body").addEventListener("click", function (e) {
       }
 
 
-      document.getElementById("blank").innerHTML = blank
+      render(document.getElementById("blank"), blank)
       if (!blank.includes("_")) {
         // console.log(blank)
-        document.getElementById("hangman16").innerHTML = "you win"
+
+        render(sixteen, "you win")
         for (let i = 1; i < 27; i++) {
           document.getElementById(i).disabled = "true"
         }
       }
 
-
-
-
     } else {
       mistakes += 1
       document.getElementById(number).className = 'notselected';
       if (mistakes === 1) {
-        document.getElementById("hangman1").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-        document.getElementById("hangman2").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-        document.getElementById("hangman3").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+        render(document.getElementById("hangman1"), "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+        render(document.getElementById("hangman2"), "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+        render(document.getElementById("hangman3"), "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
       } else if (mistakes === 2) {
-        document.getElementById("hangman4").innerHTML = "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-        document.getElementById("hangman5").innerHTML = "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿"
-        document.getElementById("hangman6").innerHTML = "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿"
+        render(document.getElementById("hangman4"), "⣿⣿⣿⡇⠄⣿⣿⣿⡿⠟⠋⣉⣉⣉⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+        render(document.getElementById("hangman5"), "⣿⣿⣿⠃⠄⠹⠟⣡⣶⡿⢟⣛⣛⡻⢿⣦⣩⣤⣤⣤⣬⡉⢻⣿⣿⣿⣿⣿⣿⣿")
+        render(document.getElementById("hangman6"), "⣿⣿⣿⠄⢀⢤⣾⣿⣿⣿⣿⡿⠿⠿⠿⢮⡃⣛⣛⡻⠿⢿⠈⣿⣿⣿⣿⣿⣿⣿")
       } else if (mistakes === 3) {
-        document.getElementById("hangman7").innerHTML = "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿"
-        document.getElementById("hangman8").innerHTML = "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿"
-        document.getElementById("hangman9").innerHTML = "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿"
+        render(document.getElementById("hangman7"), "⣿⡟⢡⣴⣯⣿⣿⣿⣉⠤⣤⣭⣶⣶⣶⣮⣔⡈⠛⠛⠛⢓⠦⠈⢻⣿⣿⣿⣿⣿")
+        render(document.getElementById("hangman8"), "⠏⣠⣿⣿⣿⣿⣿⣿⣿⣯⡪⢛⠿⢿⣿⣿⣿⡿⣼⣿⣿⣿⣶⣮⣄⠙⣿⣿⣿⣿")
+        render(document.getElementById("hangman9"), "⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⡭⠴⣶⣶⣽⣽⣛⡿⠿⠿⠿⠿⠇⣿⣿⣿⣿")
       } else if (mistakes === 4) {
-        document.getElementById("hangman10").innerHTML = "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿"
-        document.getElementById("hangman11").innerHTML = "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿"
-        document.getElementById("hangman12").innerHTML = "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿"
+        render(document.getElementById("hangman10"), "⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⣛⢛⡛⢋⣥⣴⣿⣿⣿⣿⣿")
+        render(document.getElementById("hangman11"), "⣿⣿⣿⣿⣿⢿⠱⣿⣿⣛⠾⣭⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿⣿⣿⣿⣿")
+        render(document.getElementById("hangman12"), "⠑⠽⡻⢿⣿⣮⣽⣷⣶⣯⣽⣳⠮⣽⣟⣲⠯⢭⣿⣛⣛⣿⡇⢸⣿⣿⣿⣿⣿⣿")
       } else if (mistakes === 5) {
-        document.getElementById("hangman13").innerHTML = "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿"
-        document.getElementById("hangman14").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
-        document.getElementById("hangman15").innerHTML = "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
+        render(document.getElementById("hangman13"), "⠄⠄⠈⠑⠊⠉⠟⣻⠿⣿⣿⣿⣿⣷⣾⣭⣿⣛⠷⠶⠶⠂⣴⣿⣿⣿⣿⣿⣿⣿")
+        render(document.getElementById("hangman14"), "⠄⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣉⣡⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+        render(document.getElementById("hangman15"), "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
       } else if (mistakes === 6) {
-        document.getElementById("blank").innerHTML = answer
-        document.getElementById("hangman16").innerHTML = "you lose"
+        render(document.getElementById("blank"), answer)
+        render(sixteen, "you lose")
         for (let i = 1; i < 27; i++) {
           document.getElementById(i).disabled = "true"
         }
@@ -119,16 +107,26 @@ document.getElementById("body").addEventListener("click", function (e) {
     }
     let button = document.querySelector("#number")
 
-  }
-})
 
-// sources
-// https://jsfiddle.net/3fzb1kk1/
-// http://jsfiddle.net/Mzg6c/
-// https://stackoverflow.com/questions/1431094/how-do-i-replace-a-character-at-a-particular-index-in-javascript
-// https://flexiple.com/disable-button-javascript/
-// https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_innerhtml
-// https://css-tricks.com/forums/topic/making-my-h1-and-h2-text-vertically-closer-to-one-another/
-// https://stackoverflow.com/questions/14494747/how-to-add-images-to-readme-md-on-github
-// https://davidwalsh.name/event-delegate
-// https://www.twitchquotes.com/copypastas/ascii-art
+  }
+}
+
+// init
+function init() {
+render(document.getElementById("hangmans"), "")
+  document.getElementById("body").addEventListener("click", fun)
+
+}
+function game(){
+String.prototype.replaceAt = function (index, replacement) {
+  return this.substr(0, index) + replacement + this.substr(index + replacement.length);
+}
+// handleGuess
+function handleGuess() {
+  document.getElementById("body").addEventListener("click", fun)
+
+}
+handleGuess()
+}
+game()
+document.getElementById("reset").addEventListener("click", init);
