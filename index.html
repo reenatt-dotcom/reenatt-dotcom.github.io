@@ -6,29 +6,35 @@
   <meta name="viewport" content="width=device-width">
   <title>hangman</title>
   <link href="main.css" rel="stylesheet" type="text/css" />
+  <button type="button" id="reset" type="reset">Reset</button>
 </head>
 
 <body id="body" style="background-color: black">
   <h1 id="hackerman">Hackerman</h1>
-  <h1 id="hangman1"></h1>
-  <h1 id="hangman2"></h1>
-  <h1 id="hangman3"></h1>
-  <h1 id="hangman4"></h1>
-  <h1 id="hangman5"></h1>
-  <h1 id="hangman6"></h1>
-  <h1 id="hangman7"></h1>
-  <h1 id="hangman8"></h1>
-  <h1 id="hangman9"></h1>
-  <h1 id="hangman10"></h1>
-  <h1 id="hangman11"></h1>
-  <h1 id="hangman12"></h1>
-  <h1 id="hangman13"></h1>
-  <h1 id="hangman14"></h1>
-  <h1 id="hangman15"></h1>
-  <h1 id="blank"></h1>
-  <h1 id="hangman16"></h1>
+  <div id="hangmans">
+
+    <h1 id="hangman1"></h1>
+    <h1 id="hangman2"></h1>
+    <h1 id="hangman3"></h1>
+    <h1 id="hangman4"></h1>
+    <h1 id="hangman5"></h1>
+    <h1 id="hangman6"></h1>
+    <h1 id="hangman7"></h1>
+    <h1 id="hangman8"></h1>
+    <h1 id="hangman9"></h1>
+    <h1 id="hangman10"></h1>
+    <h1 id="hangman11"></h1>
+    <h1 id="hangman12"></h1>
+    <h1 id="hangman13"></h1>
+    <h1 id="hangman14"></h1>
+    <h1 id="hangman15"></h1>
+    <h1 id="blank"></h1>
+    <h1 id="hangman16"></h1>
+  </div>
+
   <br>
-  <button type="button" id="1">A</button>
+  <div>
+    <button type="button" id="1" class="saveBtn">A</button>
   <button type="button" id="2">B</button>
   <button type="button" id="3">C</button>
   <button type="button" id="4">D</button>
@@ -54,7 +60,9 @@
   <button type="button" id="24">X</button>
   <button type="button" id="25">Y</button>
   <button type="button" id="26">Z</button>
-  <button id="button">RESET GAME</button>
+  </div>
+
+
 
   <script src="main.js"></script>
 </body>
