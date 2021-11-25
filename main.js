@@ -112,11 +112,7 @@ function init(e) {
   userRating
   render(document.getElementById("blank"), blank)
   clearBoard()
-  for (var i = 1; i < 27; i++) {
-    document.getElementById(i).disabled = false
-    document.getElementById(i).className = "button"
-  }
-
+  clearButtons()
 }
 
 // clearBoard
@@ -141,6 +137,12 @@ function clearBoard() {
   render(document.getElementById("hangman14"), "")
   render(document.getElementById("hangman15"), "")
   render(document.getElementById("hangman16"), "")
+}
+function clearButtons() {
+  for (var i = 1; i < 27; i++) {
+    document.getElementById(i).disabled = false
+    document.getElementById(i).className = "button"
+  }
 }
 
 init()
