@@ -96,7 +96,6 @@ function handleGuess(e) {
 
 // init
 function init(e) {
-  // document.getElementById("i").disabled = 'false';
   answer = ''
   randomWord()
   mistakes = 0
@@ -113,8 +112,6 @@ function init(e) {
   userRating
   render(document.getElementById("blank"), blank)
   clearBoard()
-  // clearButtons()
-  // let number = e.target.id.replace("post-", "")
   for (var i = 1; i < 27; i++) {
     document.getElementById(i).disabled = false
     document.getElementById(i).className = "button"
