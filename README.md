@@ -8,3 +8,5 @@ Though the origins of the game are unknown, a variant is mentioned in a book of 
 technologies used: JavaScript, HTML, CSS
 <br>
 https://reenatt-dotcom.github.io/
+<br>
+future enhancements: more categories
