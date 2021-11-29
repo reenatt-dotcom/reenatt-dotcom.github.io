@@ -138,6 +138,8 @@ function clearBoard() {
   render(document.getElementById("hangman15"), "")
   render(document.getElementById("hangman16"), "")
 }
+
+// clearButtons
 function clearButtons() {
   for (var i = 1; i < 27; i++) {
     document.getElementById(i).disabled = false
