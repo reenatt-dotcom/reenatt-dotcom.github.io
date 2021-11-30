@@ -25,8 +25,8 @@ String.prototype.replaceAt = function (index, replacement) {
 }
 
 // render
-function render(x, y) {
-  x.innerHTML = y
+function render(code, element) {
+  code.innerHTML = element
 }
 
 // handleGuess
