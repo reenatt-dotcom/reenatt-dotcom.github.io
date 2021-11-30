@@ -1,15 +1,12 @@
 /*----- constants -----*/
 const words = ["python", "javascript", "mongodb", "json", "java", "html", "css", "c", "csharp", "golang", "kotlin", "php", "sql", "ruby"]
-const maxWrong = 6
 const letters = "abcdefghijklmnopqrstuvwxyz"
 
 /*----- app's state (variables) -----*/
 let answer
 let mistakes
-let guessed
 let blank
 let answerwithspaces
-let userRating
 
 /*----- cached element references -----*/
 const sixteen = document.getElementById("hangman16")
@@ -37,10 +34,8 @@ function handleGuess(e) {
 
   let number = e.target.id.replace("post-", "")
   document.getElementById(number).disabled = "true"
-  guessed.push(letters[number - 1])
   if (e.target && e.target.nodeName == "BUTTON" && e.target.id !== "reset") {
     let letter = letters[number - 1]
-    userRating = 1;
     if (answer.includes(letter)) {
       document.getElementById(number).className = 'selected';
       render(document.getElementById("blank"), blank)
@@ -99,7 +94,6 @@ function init(e) {
   answer = ''
   randomWord()
   mistakes = 0
-  guessed = []
   blank = ""
   for (let i = 0; i < answer.length; i++) {
     blank += "_ "
@@ -109,7 +103,6 @@ function init(e) {
     answerwithspaces += answer[i]
     answerwithspaces += " "
   }
-  userRating
   render(document.getElementById("blank"), blank)
   clearBoard()
   clearButtons()
