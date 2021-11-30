@@ -1,34 +1,27 @@
 /*----- constants -----*/
 const words = ["python", "javascript", "mongodb", "json", "java", "html", "css", "c", "csharp", "golang", "kotlin", "php", "sql", "ruby"]
 const letters = "abcdefghijklmnopqrstuvwxyz"
-
 /*----- app's state (variables) -----*/
 let answer
 let mistakes
 let blank
 let answerwithspaces
-
 /*----- cached element references -----*/
 const sixteen = document.getElementById("hangman16")
-
 /*----- event listeners -----*/
 document.getElementById("buttoncontainer").addEventListener("click", handleGuess)
 document.getElementById("reset").addEventListener("click", init)
-
 /*----- functions -----*/
 function randomWord() {
   answer = words[Math.floor(Math.random() * words.length)]
 }
-
 String.prototype.replaceAt = function (index, replacement) {
   return this.substr(0, index) + replacement + this.substr(index + replacement.length);
 }
-
 // render
 function render(code, element) {
   code.innerHTML = element
 }
-
 // handleGuess
 function handleGuess(e) {
 
@@ -88,7 +81,6 @@ function handleGuess(e) {
     let button = document.querySelector("#number")
   }
 }
-
 // init
 function init(e) {
   answer = ''
@@ -107,31 +99,25 @@ function init(e) {
   clearBoard()
   clearButtons()
 }
-
 // clearBoard
 function clearBoard() {
   render(document.getElementById("hangman1"), "")
   render(document.getElementById("hangman2"), "")
   render(document.getElementById("hangman3"), "")
-
   render(document.getElementById("hangman4"), "")
   render(document.getElementById("hangman5"), "")
   render(document.getElementById("hangman6"), "")
-
   render(document.getElementById("hangman7"), "")
   render(document.getElementById("hangman8"), "")
   render(document.getElementById("hangman9"), "")
-
   render(document.getElementById("hangman10"), "")
   render(document.getElementById("hangman11"), "")
   render(document.getElementById("hangman12"), "")
-
   render(document.getElementById("hangman13"), "")
   render(document.getElementById("hangman14"), "")
   render(document.getElementById("hangman15"), "")
   render(document.getElementById("hangman16"), "")
 }
-
 // clearButtons
 function clearButtons() {
   for (var i = 1; i < 27; i++) {
@@ -139,9 +125,7 @@ function clearButtons() {
     document.getElementById(i).className = "button"
   }
 }
-
 init()
-
 // sources
 // https://jsfiddle.net/3fzb1kk1/
 // https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_innerhtml
