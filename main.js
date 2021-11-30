@@ -24,7 +24,6 @@ function render(code, element) {
 }
 // handleGuess
 function handleGuess(e) {
-
   let number = e.target.id.replace("post-", "")
   document.getElementById(number).disabled = "true"
   if (e.target && e.target.nodeName == "BUTTON" && e.target.id !== "reset") {
